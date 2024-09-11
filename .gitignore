@@ -1,0 +1,35 @@
+# Awesome gitig from stack
+# https://stackoverflow.com/questions/5711120/gitignore-binary-files-that-have-no-extension
+# answered Aug 31, 2014 at 14:05 VenomVendor
+
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
+### Above combination will ignore all files without extension ###
+
+# Ignore files with extension `.class` & `.sm`
+*.class
+*.sm
+
+# Ignore `bin` dir
+bin/
+# or
+*/bin/*
+
+# Unignore all `.jar` in `bin` dir
+!*/bin/*.jar
+
+# Ignore all `library.jar` in `bin` dir
+*/bin/library.jar
+
+# Ignore a file with extension
+relative/path/to/dir/filename.extension
+
+# Ignore a file without extension
+relative/path/to/dir/anotherfile
